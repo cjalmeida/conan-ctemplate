@@ -6,7 +6,7 @@ class CTemplateConan(ConanFile):
     name = "CTemplate"
     version = "2.3"
     license = "BSD"
-    url = "https://github.com/OlafvdSpek/ctemplate"
+    url = "https://github.com/cjalmeida/conan-ctemplate"
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
     default_options = "shared=False"
