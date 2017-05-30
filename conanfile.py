@@ -5,6 +5,7 @@ import os
 class CTemplateConan(ConanFile):
     name = "CTemplate"
     version = "2.3"
+    description = "CTemplate templating engine"
     license = "BSD"
     url = "https://github.com/cjalmeida/conan-ctemplate"
     settings = "os", "compiler", "build_type", "arch"
