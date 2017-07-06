@@ -17,7 +17,7 @@ class CTemplateConan(ConanFile):
     def build(self):
         srcdir = self.conanfile_directory
         shutil.copy(srcdir + '/example.tpl', '.')
-        self.run('g++ "%s/example.cpp" @conanbuildinfo.gcc -o example' % srcdir)
+        self.run('$CXX "%s/example.cpp" @conanbuildinfo.gcc -o example' % srcdir)
 
     def test(self):
         env = RunEnvironment(self)
